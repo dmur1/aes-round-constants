@@ -50,7 +50,22 @@ for i in range(1, 29):
 for i in range(len(expected_rc)):
     assert(expected_rc[i] == rc[i])
 
-print("aes round contants")
+print("aes round contants ~ method 1")
 for i in range(len(rc)):
     print(f"[{i + 1:02}] = {rc[i]:02x}")
+
+# alternate method i found online
+# https://math.stackexchange.com/a/4345415
+
+def compute_rc(round):
+    rc = 0xCB
+    for i in range(0, round + 1):
+        rc <<= 1
+        if rc > 0xFF:
+            rc ^= 0x11B
+    return rc
+
+print("aes round contants ~ method 2")
+for i in range(30):
+    print(f"[{i:02}] = {compute_rc(i):02x}")
 

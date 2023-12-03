@@ -2,7 +2,7 @@ demonstrates the round constants for aes
 
 expected output:
 $ python3 ./go.py 
-aes round contants
+aes round contants ~ method 1
 [01] = 01
 [02] = 02
 [03] = 04
@@ -32,3 +32,35 @@ aes round contants
 [27] = fa
 [28] = ef
 [29] = c5
+aes round contants ~ method 2
+[00] = 8d
+[01] = 01
+[02] = 02
+[03] = 04
+[04] = 08
+[05] = 10
+[06] = 20
+[07] = 40
+[08] = 80
+[09] = 1b
+[10] = 36
+[11] = 6c
+[12] = d8
+[13] = ab
+[14] = 4d
+[15] = 9a
+[16] = 2f
+[17] = 5e
+[18] = bc
+[19] = 63
+[20] = c6
+[21] = 97
+[22] = 35
+[23] = 6a
+[24] = d4
+[25] = b3
+[26] = 7d
+[27] = fa
+[28] = ef
+[29] = c5
+
