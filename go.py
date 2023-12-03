@@ -1,7 +1,5 @@
 '''
 https://nvlpubs.nist.gov/nistpubs/fips/nist.fips.197.pdf
-The function RotWord() takes a word [a0,a1,a2,a3] as input,
-performs a cyclic permutation, and returns the word [a1,a2,a3,a0].
 The round constant word array, Rcon[i], contains the values given by
 [x**i-1,{00},{00},{00}], with x**i-1 being powers of x (x is denoted as {02})
 in the field GF(28), as discussed in Sec. 4.2 (note that i starts at 1, not 0)
