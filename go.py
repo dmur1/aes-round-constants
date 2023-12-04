@@ -2,7 +2,7 @@
 https://nvlpubs.nist.gov/nistpubs/fips/nist.fips.197.pdf
 The round constant word array, Rcon[i], contains the values given by
 [x**i-1,{00},{00},{00}], with x**i-1 being powers of x (x is denoted as {02})
-in the field GF(28), as discussed in Sec. 4.2 (note that i starts at 1, not 0)
+in the field GF(2**8), as discussed in Sec. 4.2 (note that i starts at 1, not 0)
 '''
 
 # these are the expected round constants up to round 29
@@ -24,7 +24,7 @@ rc_for_aes_192 = [
     0x01, 0x02, 0x04, 0x08, 0x10, 0x20, 0x40, 0x80
 ]
 
-# aes 192's key schedule requires the first 7 round constants
+# aes 256's key schedule requires the first 7 round constants
 rc_for_aes_256 = [
     0x01, 0x02, 0x04, 0x08, 0x10, 0x20, 0x40
 ]
